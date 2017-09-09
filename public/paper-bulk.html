@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-theme.css">
+  <script src="../js/paper-bulk.js"></script>
+  <title>multi-paper</title>
+</head>
+<body>
+<div class="container">
+  <header></header>
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">paper-bulk</a></li>
+    <li><a href="master.html">management</a></li>
+  </ul>
+  <br>
+  <div class="container-fluid">
+    <form>
+      <div class="form-group">
+          <label for="people">AAAA:</label>
+          <input type="text" id="people" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="opponent">BBBB:</label>
+          <input type="text" id="opponent" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="case_name">CCC:</label>
+        <input type="text" id="case_name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="lawyer">DDDDD:</label>
+        <input type="text" id="lawyer" class="form-control">
+      </div>
+      <table id="type_list" class="table table-hover">
+        <tr>
+          <th>EE</th>
+          <th>FF</th>
+          <th>GGG</th>
+          <th>HHHHHH</th>
+          <th>-</th>
+        </tr>
+        <tr>
+          <td>III</td>
+          <td>
+            <div class="form-group form-group-sm">
+              <input type="text" name="row1_amount" class="form-control input-sm">
+            </div>
+          </td>
+          <td>
+            <label class="radio-inline">
+              <input type="radio" name="row1_con_ttt" value="1" checked>有
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="row1_con_ttt" value="0">無
+            </label>
+          </td>
+          <td>
+            <label class="radio-inline">
+              <input type="radio" name="row1_with_ttt" value="1" checked>有
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="row1_with_ttt" value="0">無
+            </label>
+          </td>
+          <td>
+            <button type="button" class="btn btn-danger btn-xs">delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>JJJJJ</td>
+          <td>
+            <div class="form-group form-group-sm">
+              <input type="text" name="row2_amount" class="form-control input-sm">
+            </div>
+          </td>
+          <td>
+            <label class="radio-inline">
+              <input type="radio" name="row2_con_ttt" value="1" checked>有
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="row2_con_ttt" value="0">無
+            </label>
+          </td>
+          <td>
+            <label class="radio-inline">
+              <input type="radio" name="row2_with_ttt" value="1" checked>有
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="row2_with_ttt" value="0">無
+            </label>
+          </td>
+          <td>
+            <button type="button" class="btn btn-danger btn-xs">delete</button>
+          </td>
+        </tr>
+        <tr id="row_template" style="display: none;">
+          <td id="type"></td>
+          <td>
+            <div class="form-group form-group-sm">
+              <input type="text" name="amount" class="form-control input-sm">
+            </div>
+          </td>
+          <td>
+            <label class="radio-inline">
+              <input type="radio" name="con_ttt" value="1" checked>有
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="con_ttt" value="0">無
+            </label>
+          </td>
+          <td>
+            <label class="radio-inline">
+              <input type="radio" name="with_ttt" value="1" checked>有
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="with_ttt" value="0">無
+            </label>
+          </td>
+          <td>
+            <button type="button" class="btn btn-danger btn-xs">delete</button>
+          </td>
+        </tr>
+        <div id="input_template" class="form-group form-group-sm" style="display: none">
+          <input type="text" class="form-control input-sm">
+        </div>
+      </table>
+      <div class="form-group">
+        <label for="types">add:</label>
+        <select id="types" class="form-control">
+          <option value="0">ZZZZZZZZ</option>
+          <option value="1">YYYYY</option>
+          <option value="2">XXX</option>
+          <option value="3">III</option>
+          <option value="4">JJJJJ</option>
+        </select>
+      </div>
+    </form>
+    <br>
+    <div class="row">
+      <button type="button" id="paper_create" class="btn btn-default">create</button>
+    </div>
+  </div>
+  <!--<footer>copylight</footer>-->
+</div>
+</body>
+</html>

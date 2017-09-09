@@ -1,0 +1,17 @@
+{
+  "name": "multi-paper",
+  "version": "0.0.0",
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "bignumber.js": "^4.0.2",
+    "fs-extra": "^3.0.1",
+    "jquery": "^3.2.1",
+    "moji": "^0.5.1",
+    "nedb-promise": "^2.0.1",
+    "xlsx-template": "0.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
